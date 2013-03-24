@@ -1,0 +1,7 @@
+Plan Your Base design document
+
+Item:
+  date?
+  title
+  description
+  amount (double)
