@@ -2,9 +2,11 @@
 	<head>
 		<title>plan.yourba.se</title>
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+    <link href="css/test.css" rel="stylesheet" media="screen"/>
+    <script type='text/javascript' id='lt_ws' src='http://localhost:49512/socket.io/lighttable/ws.js'></script>
 	</head>
 	<body>
-<!-- 
+<!--
 <div class="navbar navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
@@ -29,24 +31,10 @@
     <p>Test test test</p>
   </div>
   <div id="items">
-    
+
   </div>
 </div>
 
-<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-$(document).ready( function() {
-	var data = $.ajax({
-		type : "GET",
-		url: "http://test.plan.yourba.se:8080/item/hi.html",
-		data : "",
-		success: function(html) {
-			$("#items").html(html)
-		}
-	})
-	
-})
-</script>
+
 	</body>
 </html>

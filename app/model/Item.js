@@ -1,8 +1,8 @@
 Ext.define('Qalendar.model.Item', {
     extend: 'Ext.data.Model',
     fields: [{
-    	name: 'id',
-    	type: 'int'
+    	name: '_id',
+    	type: 'String'
     }, {
         name: 'title',
         type: 'string'
