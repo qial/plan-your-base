@@ -11,7 +11,7 @@ Ext.application({
             	xtype: 'panel',
             	title: 'Qalendar Yay',
             	items: [{
-            		xtype: 'itemseditor'
+            		xtype: 'itemlist'
             	}]
             }]
         });

@@ -3,10 +3,16 @@ Ext.define('Qalendar.store.Items', {
     model: 'Qalendar.model.Item',
     proxy: {
     	type: 'ajax',
-        url: 'http://silver-surfer.home.qial.net/json/items',
+        api: {
+            create: 'http://silver-surfer.home.qial.net/json/item/new.json',
+            read: 'http://silver-surfer.home.qial.net/json/items.json',
+            update: 'http://silver-surfer.home.qial.net/json/item/edit.json',
+            destroy: 'http://silver-surfer.home.qial.net/json/item/delete.json',
+        },
         reader: {
             type: 'json',
-            root: 'items'
+            root: 'items',
+            successProperty: 'success'
         }
     },
 	autoLoad: true
