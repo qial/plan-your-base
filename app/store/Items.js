@@ -5,10 +5,10 @@ Ext.define('Qalendar.store.Items', {
     	type: 'ajax',
     	batchItems: false,
         api: {
-            create: 'http://silver-surfer.home.qial.net/json/item/new.json',
-            read: 'http://silver-surfer.home.qial.net/json/items.json',
-            update: 'http://silver-surfer.home.qial.net/json/item/edit.json',
-            destroy: 'http://silver-surfer.home.qial.net/json/item/delete.json',
+            create: 'http://qalendar-dev.qial.net/json/item/new.json',
+            read: 'http://qalendar-dev.qial.net/json/items.json',
+            update: 'http://qalendar-dev.qial.net/json/item/edit.json',
+            destroy: 'http://qalendar-dev.qial.net/json/item/delete.json',
         },
         reader: {
             type: 'json',
