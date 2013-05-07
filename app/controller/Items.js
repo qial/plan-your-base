@@ -29,6 +29,7 @@ Ext.define("Qalendar.controller.Items", {
 
     onNewItemClick: function() {
         console.log("new item clicked");
+    	var view = Ext.widget('itemedit');
     },
 
     editItem: function(grid, record) {
@@ -42,8 +43,12 @@ Ext.define("Qalendar.controller.Items", {
             form   = win.down('form'),
             record = form.getRecord(),
             values = form.getValues();
-
-        record.set(values);
+        if(record) {
+            record.set(values);
+        }
+        else {
+        	this.getItemsStore().add(values);
+        }
         win.close();
         // synchronize with server
         this.getItemsStore().sync();
