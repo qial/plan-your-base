@@ -3,6 +3,7 @@ Ext.define('Qalendar.store.Items', {
     model: 'Qalendar.model.Item',
     proxy: {
     	type: 'ajax',
+    	batchItems: false,
         api: {
             create: 'http://silver-surfer.home.qial.net/json/item/new.json',
             read: 'http://silver-surfer.home.qial.net/json/items.json',
